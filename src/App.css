@@ -1,3 +1,62 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  background-color: papayawhip;
+  max-width: 40rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+}
+.gnrl-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+}
+.gnrl-div h3,
+img {
+  float: left;
+}
+.gnrl-div h4,
+h2 {
+  float: right;
+}
+.container p {
   text-align: center;
+}
+img {
+  max-width: 12rem;
+  border-radius: 50%;
+}
+button {
+  width: 10rem;
+  height: 2rem;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  background-color: rgb(0, 123, 255);
+  color: white;
+  transition: all 0.8s ease;
+}
+button:hover {
+  cursor: pointer;
+  background-color: tomato;
+}
+button:active {
+  transform: scale(0.9);
 }
