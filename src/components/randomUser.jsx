@@ -20,7 +20,7 @@ const RandomUser = () => {
   const { dob, email, id, location, name, phone, picture, registered } = person;
 
   return (
-    <>
+    <div className="body">
       <div className="container" key={id?.value}>
         <div className="gnrl-div">
           <img src={picture?.large} />
@@ -55,7 +55,7 @@ const RandomUser = () => {
         </p>
       </div>
       <button onClick={() => getUser()}>Random User</button>
-    </>
+    </div>
   );
 };
 export default RandomUser;
